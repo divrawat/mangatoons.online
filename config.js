@@ -2,7 +2,7 @@
 // export const DOMAIN = 'http://localhost:3000';
 // export const BACKEND_DOMAIN = 'http://localhost:8000';
 
-export const DOMAIN = 'https://mangatoons.online';
+export const DOMAIN = 'https://www.mangatoons.online';
 export const BACKEND_DOMAIN = 'https://backend-mangawebsite.vercel.app'
 
 
