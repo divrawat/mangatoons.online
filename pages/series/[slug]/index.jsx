@@ -271,14 +271,14 @@ const MangaPage = ({ errorcode, manga, chapterArray }) => {
                             <h1 className={`${roboto.className} tracking-wider text-center font-bold text-2xl pt-6 pb-5 `}>{`${manga?.manga?.fullname}`}</h1>
                             <p className={`${roboto3.className} my-4 leading-[2] text-[15px] px-2 text-center `}>{manga?.manga?.description}</p>
 
-                            <div className="flex flex-wrap justify-center mt-5 gap-5 sm:px-4 px-2">
+                            {/* <div className="flex flex-wrap justify-center mt-5 gap-5 sm:px-4 px-2">
                                 {manga?.manga?.categories?.map((category, index) => (
                                     <Link prefetch={false} href={`${DOMAIN}/categories/${category?.slug}?page=1`} key={index}
                                         className={`${roboto2.className} tracking-wider text-white sm:text-[13px] text-[12px] bg-[black] border border-[#2f2e2e] hover:bg-[#2c2b2b] font-bold py-1.5 sm:px-3 px-2 rounded hover:scale-110 active:scale-95 transition-transform`}>
                                         {category?.name}
                                     </Link>
                                 ))}
-                            </div>
+                            </div> */}
 
                             <div className="flex justify-center items-center  pb-8 md:gap-16 gap-6 flex-wrap mt-14">
                                 <div className="text-center">
@@ -287,14 +287,15 @@ const MangaPage = ({ errorcode, manga, chapterArray }) => {
                                 </div>
 
                                 <div className="text-center">
+                                    <p className={`${roboto2.className} font-bold sm:text-[18px] text-[14px] mb-2`}>Type</p>
+                                    <p className={`${roboto2.className} sm:text-[16px] text-[13px]`}>{manga?.manga?.type}</p>
+                                </div>
+
+                                <div className="text-center">
                                     <p className={`${roboto2.className} font-bold sm:text-[18px] text-[14px] mb-2`}>Author</p>
                                     <p className={`${roboto2.className} sm:text-[16px] text-[13px]`}>{manga?.manga?.author}</p>
                                 </div>
 
-                                <div className="text-center">
-                                    <p className={`${roboto2.className} font-bold sm:text-[18px] text-[14px] mb-2`}>Type</p>
-                                    <p className={`${roboto2.className} sm:text-[16px] text-[13px]`}>{manga?.manga?.type}</p>
-                                </div>
                             </div>
 
 
