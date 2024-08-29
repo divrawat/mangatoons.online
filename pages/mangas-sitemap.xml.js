@@ -13,10 +13,10 @@ const generateXmlSitemap = (blogs) => {
   blogs.forEach((blog) => {
     xml += `
     <url>
-      <loc>${`${DOMAIN}/manga/${blog.slug}`}</loc>
-      <lastmod>${blog.createdAt}</lastmod>
+      <loc>${`${DOMAIN}/series/${blog.slug}`}</loc>
     </url>`;
   });
+  // <lastmod>${blog.createdAt}</lastmod>
 
   xml += '</urlset>';
   return xml;

@@ -1,5 +1,5 @@
-/*
 
+/*
 import { getChapterSitemap } from "@/actions/chapter";
 import { DOMAIN } from "../config";
 import slugify from 'slugify';
@@ -16,10 +16,11 @@ const generateXmlSitemap = (blogs) => {
         const slugifiedName = slugify(blog.manganame).toLowerCase();
         xml += `
     <url>
-      <loc>${`${DOMAIN}/manga/${slugifiedName}/chapter-${blog.chapterNumber}`}</loc>
-      <lastmod>${blog.createdAt}</lastmod>
+      <loc>${`${DOMAIN}/series/${slugifiedName}/chapter-${blog.chapterNumber}`}</loc>
     </url>`;
     });
+
+    // <lastmod>${blog.createdAt}</lastmod>
 
     xml += '</urlset>';
     return xml;
