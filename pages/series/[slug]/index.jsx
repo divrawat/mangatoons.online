@@ -189,7 +189,7 @@ const MangaPage = ({ errorcode, manga, chapterArray }) => {
                 },
                 "description": `${manga?.manga?.description}`,
                 "name": `${manga?.manga?.name} ${manga?.manga?.type}`,
-                "@id": `${DOMAIN}/${mangaurl}/#richSnippet`,
+                "@id": `${DOMAIN}/series/${mangaurl}/#richSnippet`,
                 "isPartOf": {
                     "@id": `${DOMAIN}/series/${mangaurl}/#webpage`
                 },
