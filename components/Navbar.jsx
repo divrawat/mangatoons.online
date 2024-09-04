@@ -1,8 +1,8 @@
 import Link from "next/link";
 import React, { useRef } from 'react';
 import { APP_NAME, NavbarName, navLinks } from "@/config";
-import { Rubik } from '@next/font/google';
 import { APP_LOGO } from "@/config";
+import { Rubik } from '@next/font/google';
 const roboto = Rubik({ subsets: ['latin'], weight: '800' });
 
 export default function Navbar() {

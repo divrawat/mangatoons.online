@@ -59,10 +59,11 @@ import { FaHome } from "react-icons/fa";
 import { GiBlackBook } from "react-icons/gi";
 import { useRouter } from 'next/router';
 import { useState, useEffect } from "react";
+
+import Popup from "@/components/Popup";
+
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import { AiFillChrome } from "react-icons/ai";
-
-
 import { FaTelegram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
@@ -321,6 +322,7 @@ export default function Chapter({ errorcode, manga, chapterArray, chapterData })
         <>
             {head()}
             <Navbar />
+            <Popup />
             <main>
                 <article>
                     <h1 className={`${roboto.className} text-white font-extrabold sm:text-2xl text-2xl text-center px-4 pt-5 mb-3`}>{`${manga?.name} Chapter ${chapterData?.chapterNumber}`}</h1>
