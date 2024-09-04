@@ -60,7 +60,8 @@ import { GiBlackBook } from "react-icons/gi";
 import { useRouter } from 'next/router';
 import { useState, useEffect } from "react";
 
-import Popup from "@/components/Popup";
+import dynamic from 'next/dynamic';
+const Popup = dynamic(() => import('@/components/Popup'), { ssr: false });
 
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import { AiFillChrome } from "react-icons/ai";

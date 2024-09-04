@@ -20,7 +20,7 @@ export default function Popup() {
         const lastShown = localStorage.getItem(POPUP_KEY);
         const now = Date.now();
         if (!lastShown || now - Number(lastShown) > EXPIRY_TIME) {
-            const timer = setTimeout(() => { setIsVisible(true); }, 3000);
+            const timer = setTimeout(() => { setIsVisible(true); }, 4500);
             return () => clearTimeout(timer); // Cleanup the timer
         }
     }, []);
@@ -34,8 +34,8 @@ export default function Popup() {
 
 
     return (
-        <div className="fixed inset-0 flex items-center justify-center text-white bg-black bg-opacity-90">
-            <div className="bg-[#171717] p-4 rounded-md shadow-md m-4">
+        <div className="fixed inset-0 flex items-center justify-center text-white bg-black bg-opacity-90 z-50">
+            <div className="bg-[#0e0e0e] p-4 rounded-md shadow-md m-4 border-4 border-[#8a8888]">
 
 
                 <div className="flex justify-between gap-10 items-center mb-4">

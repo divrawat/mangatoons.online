@@ -41,6 +41,10 @@ import { FaHome } from "react-icons/fa";
 import { Rubik } from '@next/font/google';
 const roboto = Rubik({ subsets: ['latin'], weight: '800' });
 const roboto2 = Rubik({ subsets: ['latin'], weight: '600' });
+
+import dynamic from 'next/dynamic';
+const Popup = dynamic(() => import('@/components/Popup'), { ssr: false });
+
 // import React from 'react';
 // import parse from 'html-react-parser';
 // import { getAllMetaTags } from '@/actions/metatags';
@@ -191,6 +195,7 @@ const Category = ({ errorCode, category, mangas, query, totalCount, metatags }) 
         <>
             {head()}
             <Navbar />
+            <Popup />
             <main>
                 <article>
                     <div className=' max-w-[1350px] mx-auto p-3 text-white'>

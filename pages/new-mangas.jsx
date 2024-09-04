@@ -37,6 +37,11 @@ import React from 'react';
 import parse from 'html-react-parser';
 const roboto = Rubik({ subsets: ['latin'], weight: '600', });
 const roboto2 = Rubik({ subsets: ['latin'], weight: '800', });
+import dynamic from 'next/dynamic';
+const Popup = dynamic(() => import('@/components/Popup'), { ssr: false });
+
+
+
 export const runtime = 'experimental-edge';
 
 
@@ -192,6 +197,7 @@ const NewMangas = ({ latestmangas, errorCode, totalCount }) => {
         <>
             {head()}
             <Navbar />
+            <Popup />
             <main>
                 <article>
                     <div className=' max-w-[1350px] mx-auto p-3 text-white'>

@@ -29,6 +29,10 @@ import { DOMAIN, APP_NAME, IMAGES_SUBDOMAIN } from "@/config";
 const roboto = Rubik({ subsets: ['latin'], weight: '800', });
 const roboto3 = Rubik({ subsets: ['latin'], weight: '600', });
 import Head from 'next/head';
+import dynamic from 'next/dynamic';
+const Popup = dynamic(() => import('@/components/Popup'), { ssr: false });
+
+
 // import React from 'react';
 // import parse from 'html-react-parser';
 // import { getAllMetaTags } from '@/actions/metatags';
@@ -150,6 +154,7 @@ export default function Home({ latestmangachapters }) {
         <>
             {head()}
             <Navbar />
+            <Popup />
             <br />
 
             <main>

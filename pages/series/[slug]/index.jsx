@@ -43,6 +43,9 @@ const roboto2 = Rubik({ subsets: ['latin'], weight: '600', });
 const roboto3 = Rubik({ subsets: ['latin'], weight: '300', });
 import dynamic from 'next/dynamic';
 const DisqusComments = dynamic(() => import('@/components/DisQus'), { ssr: false });
+import dynamic from 'next/dynamic';
+const Popup = dynamic(() => import('@/components/Popup'), { ssr: false });
+
 // import React from 'react';
 // import parse from 'html-react-parser';
 // import { getAllMetaTags } from '@/actions/metatags';
@@ -255,7 +258,7 @@ const MangaPage = ({ errorcode, manga, chapterArray }) => {
         <>
             {head()}
             <Navbar />
-
+            <Popup />
 
             <main>
                 <article>
