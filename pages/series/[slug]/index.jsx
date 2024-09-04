@@ -41,7 +41,6 @@ import { AiFillChrome } from "react-icons/ai";
 const roboto = Rubik({ subsets: ['latin'], weight: '800' });
 const roboto2 = Rubik({ subsets: ['latin'], weight: '600', });
 const roboto3 = Rubik({ subsets: ['latin'], weight: '300', });
-import dynamic from 'next/dynamic';
 const DisqusComments = dynamic(() => import('@/components/DisQus'), { ssr: false });
 import dynamic from 'next/dynamic';
 const Popup = dynamic(() => import('@/components/Popup'), { ssr: false });
