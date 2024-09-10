@@ -6,7 +6,7 @@ import slugify from 'slugify';
 import fs from 'fs';
 import path from 'path';
 
-const CHAPTERS_PER_SITEMAP = 25000;
+const CHAPTERS_PER_SITEMAP = 2000;
 
 const generateXmlSitemap = (blogs) => {
     let xml = `<?xml version="1.0" encoding="UTF-8"?>

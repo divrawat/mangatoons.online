@@ -1,4 +1,6 @@
 User-agent: *
 Disallow: /admin/
 
-Sitemap: https://mangatoons.online/manga-sitemap.xml
+Sitemap: https://www.mangatoons.online/manga-sitemap.xml
+Sitemap: https://www.mangatoons.online/chapter-sitemap1.xml
+Sitemap: https://www.mangatoons.online/chapter-sitemap2.xml
