@@ -1,12 +1,12 @@
 
-/*
+
 import { getChapterSitemap } from "@/actions/chapter";
 import { DOMAIN } from "../config";
 import slugify from 'slugify';
 import fs from 'fs';
 import path from 'path';
 
-const CHAPTERS_PER_SITEMAP = 2000;
+const CHAPTERS_PER_SITEMAP = 4000;
 
 const generateXmlSitemap = (blogs) => {
     let xml = `<?xml version="1.0" encoding="UTF-8"?>
@@ -54,8 +54,8 @@ export async function getServerSideProps() {
 export default function Sitemap() {
     return null;
 }
-*/
 
 
-export default function Sitemap() { return null; }
+
+// export default function Sitemap() { return null; }
 
