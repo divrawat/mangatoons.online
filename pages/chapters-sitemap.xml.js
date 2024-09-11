@@ -1,5 +1,5 @@
 
-
+/*
 import { getChapterSitemap } from "@/actions/chapter";
 import { DOMAIN } from "../config";
 import slugify from 'slugify';
@@ -55,7 +55,7 @@ export default function Sitemap() {
     return null;
 }
 
+*/
 
-
-// export default function Sitemap() { return null; }
+export default function Sitemap() { return null; }
 
