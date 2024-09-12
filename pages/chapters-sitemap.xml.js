@@ -1,5 +1,5 @@
 
-
+/*
 import { getChapterSitemap } from "@/actions/chapter";
 import { DOMAIN } from "../config";
 import slugify from 'slugify';
@@ -51,11 +51,8 @@ export async function getServerSideProps() {
     return { props: {} };
 }
 
-export default function Sitemap() {
-    return null;
-}
+*/
 
 
-
-// export default function Sitemap() { return null; }
+export default function Sitemap() { return null; }
 
