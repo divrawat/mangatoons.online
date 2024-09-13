@@ -15,6 +15,10 @@ export default function Document() {
         <link rel="icon" type="image/png" sizes="512x512" href={`${IMAGES_SUBDOMAIN}/public/android-chrome-512x512.png`} />
 
         <meta name="google-adsense-account" content="ca-pub-1721485376950080" />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script async crossOrigin="anonymous"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1721485376950080" />
+        <script async data-ad-client="ca-pub-1721485376950080" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" ></script>
 
       </Head>
       <body>
