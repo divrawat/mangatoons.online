@@ -44,6 +44,7 @@ const roboto3 = Rubik({ subsets: ['latin'], weight: '300', });
 const DisqusComments = dynamic(() => import('@/components/DisQus'), { ssr: false });
 import dynamic from 'next/dynamic';
 const Popup = dynamic(() => import('@/components/Popup'), { ssr: false });
+const MyDynamicComp = dynamic(() => import('@/components/MyDynamicComp'), { ssr: false });
 
 // import React from 'react';
 // import parse from 'html-react-parser';
@@ -335,7 +336,9 @@ const MangaPage = ({ errorcode, manga, chapterArray }) => {
                                 <div className="flex hover:scale-105 active:scale-95 transition-transform my-1" key={index}>
                                     <Link prefetch={false} href={`${DOMAIN}/series/${mangaurl}/chapter-${chapternumber?.chapterNumber}`} className="sm:p-5 p-2  hover:underline text-white bg-black hover:bg-[#2c2b2b] border border-[#292828] rounded sm:w-[180px] w-[100px]">
                                         <p className="sm:text-[14px] text-[12px] tracking-wider font-semibold">{`Chapter  ${chapternumber?.chapterNumber}`}</p>
-                                        <p className="sm:text-[11px] text-[10px] font-normal pt-1.5">{formatCreatedAt(chapternumber?.createdAt)}</p>
+                                        <MyDynamicComp>
+                                            <p className="sm:text-[11px] text-[10px] font-normal pt-1.5">{formatCreatedAt(chapternumber?.createdAt)}</p>
+                                        </MyDynamicComp>
                                     </Link>
                                 </div>
                             ))}
